@@ -1,7 +1,7 @@
 ﻿# Projeto Jogo da Memória
 Este projeto faz parte do bootcamp da plataforma DIO em parceria com a empresa Ifood, sobre desenvolvimento de jogos, este é o segundo de quatro jogos que farei.
 
-##Em Breve Atualizações
+## Em Breve Atualizações
 Irei substituir os emojis por imagens onde estou eu e minha namorada, em comemoração do primeiro ano de namoro.
 
 ## Teste o jogo
