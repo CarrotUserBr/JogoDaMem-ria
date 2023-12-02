@@ -10,7 +10,7 @@ for(let i = 0; i < img.length; i++) {
     id.value = `${i}`;
     box.setAttributeNode(id);
     let image = document.createElement("img");
-    image.src = `/src/images/${shuffleImg[i]}.jpg`;
+    image.src = `src/images/${shuffleImg[i]}.jpg`;
     box.appendChild(image)
     box.onclick = handleClick;
     document.querySelector(".game").appendChild(box);
