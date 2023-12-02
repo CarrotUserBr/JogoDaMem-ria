@@ -1,11 +1,23 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fc1e8a;
+    background-image: url(../images/background.jpg);
     user-select: none;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .013);
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
 
 main {
     position: relative;
@@ -14,17 +26,12 @@ main {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(
-        325deg,
-        #03001e 0%,
-        #7303c0 30%,
-        #ec38bc 70%,
-        #fdeff9 100%
-    );
+    border: #000 solid 2px;
+    background-image: radial-gradient(#ee0000 0%, #af2222 100%);
     padding: 40px 60px;
 }
 
-h2 {
+h2{
     font-size: 3em;
     color: #fff;
     text-transform: uppercase;
@@ -66,7 +73,6 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-
     font-size: 3em;
     transform: rotateY(180deg);
     transition: 0.25s;
@@ -75,10 +81,11 @@ h2 {
     content: "";
     position: absolute;
     inset: 0;
-    background: #404040;
+    background: #912626;
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
+    border: 1px solid #000;
 }
 
 .item.boxOpen {
@@ -87,4 +94,8 @@ h2 {
 .item.boxOpen::after,
 .boxMatch::after {
     transform: rotateY(180deg);
+}
+.item img {
+    height: 100px;
+    width: 100px;
 }
