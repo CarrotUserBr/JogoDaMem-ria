@@ -4,7 +4,28 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../images/background.jpg);
+    background-image: linear-gradient(
+        135deg,
+        #000000 0%,
+        #440000 15%,
+        #770000 20%,
+        #aa0000 25%,
+        #ff001e 30%,
+        #ff1010 33%,
+        #ff001e 35%,
+        #ff1010 40%,
+        #ff001e 43%,
+        #be0d00 50%,
+        #ff001e 57%,
+        #ff1010 60%,
+        #ff001e 65%,
+        #ff1010 67%,
+        #ff001e 70%,
+        #aa0000 75%,
+        #770000 80%,
+        #440000 85%,
+        #000000 100%
+        );
     user-select: none;
 }
 
@@ -16,8 +37,8 @@ header {
     color: #fff;
     font-size: 20px;
     margin-bottom: 2rem;
+    text-shadow: 0px 10px 10px #000;
 }
-
 
 main {
     position: relative;
@@ -36,23 +57,27 @@ h2{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-shadow: 0px 10px 10px #000;
 }
 
 .reset {
     padding: 15px 20px;
     width: 100%;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #b1000f;
     border: none;
     font-size: 1.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 600;
+    border: 1px solid #000;
+    text-shadow: 0px 10px 10px #000;
 }
-.reset:focus {
-    color: #ec38bc;
-    background-color: #262809;
+.reset:hover {
+    color: #D01111;
+    background-color: #912626;
+    box-shadow: inset -3px 3px 10px 4px #5a1818;
 }
 
 .game {
@@ -86,6 +111,10 @@ h2{
     transform: rotateY(0deg);
     backface-visibility: hidden;
     border: 1px solid #000;
+    cursor: pointer;
+}
+.item:hover::after{
+    box-shadow: inset -3px 3px 10px 4px #5a1818;
 }
 
 .item.boxOpen {
