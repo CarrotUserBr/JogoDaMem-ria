@@ -68,6 +68,15 @@ function checkMatch() {
     console.log(`Verificação concluída!`)
 };
 
+//Funções startMenu
+function startGame() {
+    document.getElementById("startMenu").style.display = "none"
+    document.getElementById("game").style.display = "flex"
+}
+function viewInstructions() {
+
+}
+
 //Função inicial
 function init(){
     createCards();
