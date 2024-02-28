@@ -24,17 +24,18 @@ function createCards() {
 
 //Função para virar as cartas no click
 function handleClick() {
+    const classListBox = this.classList;
+    if (!classListBox.contains("boxMatch")){
         if (openCards.length < 2 && !openCards.includes(this)){
             this.classList.add("boxOpen");
             openCards.push(this);
-            
             //Objetivo: Entender quando os cliques ocorrem e verificar o estado do array "openCards".
             console.log(`openCards após adicionar: ${openCards.map(card => card.id)}`);
         }
-
         if (openCards.length == 2) {
             setTimeout(checkMatch, 500);
         }
+    }
 };
 
 //Função para conferir se as duas cartas são iguais
@@ -69,10 +70,10 @@ function checkMatch() {
 };
 
 //Funções startMenu
-function startGame() {
-    document.getElementById("startMenu").style.display = "none"
-    document.getElementById("game").style.display = "flex"
-}
+// function startGame() {
+//     document.getElementById("startMenu").style.display = "none"
+//     document.getElementById("gameContainer").style.display = "flex"
+// }
 function viewInstructions() {
 
 }

@@ -26,7 +26,6 @@ body{
         #440000 85%,
         #000000 100%
         );
-    user-select: none;
 }
 
 header {
@@ -130,11 +129,13 @@ h2{
 }
 
 /* Relacionado ao menu inicial */
-#game {
-    display: none;
+#gameContainer {
+    /* display: none; */
+    display: flex;
 }
 #startMenu {
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
 }
@@ -160,3 +161,22 @@ h2{
     box-shadow: inset -3px 3px 10px 4px #5a1818;
 }
 
+/* Pontuações */
+
+.points__container {
+    display: flex;
+    justify-content: space-around;
+    width: 430px;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 32px;
+    background-color: #b1000f;
+    border: .5px solid #000;
+    color: #fff;
+    width: 45%;
+    font-size: 1.4rem;
+}
